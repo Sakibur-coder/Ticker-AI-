@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmltag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticker AI</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="output css/style.css">
+
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-white dark:bg-gray-800">
+
+    <!-------------- nav section -------------->
+    <header class="md:mx-14 md:py-4 sms:mx-1 sm:mx-12 mx-2 my-2 header">
+        <nav class="container mx-auto flex items-center justify-between md:mx-auto sms:w-full sms:justify-evenly">
+            <div class="flex items-center gap-1 md:gap-3">
+                <a href="index.html"></a>
+                    <img class="w-16 md:w-[80px] sms:w-12 sm:w-14 sms:left-0" src="images/tai-logo.png" 
+                    alt="">
+                </a>
+                <p class="text-[10px] md:text-[13px] dark:text-white">
+                    A Mark Cuban Company <br>
+                    AI-based Financial Market News Aggregator
+                </p>
+            </div>
+
+            <div class="flex items-center gap-2 md:gap-6">
+                <a href="news.html">
+                    <button class="bg-blue-400 px-2 py-1 text-[10px] md:px-6 md:py2 font-semibold border-2 border-blue-400 transition md:text-[12px] text-white rounded-[2px] hover:border-2 hover:border-blue-400 hover:bg-transparent hover:text-black hover:font-semibold hover:scale-105 hover:translate-y-0.5 dark:hover:text-white">
+                        Personalize News
+                    </button>
+                </a>
+
+                <div class="bg-gray-200 w-5 text-md text-center rounded-full text-blue-400 font-semibold md:w-8 md:text-2xl">IK</div>
+                <button class="mt-1 md:mt-0 text-center ml-2" id="switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" class=" dark:stroke-white"/>
+                      </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!---------------- Banner section ----------------->
+    <section class="flex flex-col items-center md:px-0 px-4 md:py-32 py-20 bg-cover bg-center banner" style="background-image: url(images/banner.jpeg);">
+        <h1 class="text-3xl font-bold italic bg-white px-1 md:px-3 md:text-4xl text-center">tickerAI</h1>
+        <div class="flex bg-white md:w-[520px] w-full md:p-3 p-2 rounded-[4px] mt-3">
+            <i class="fa-solid fa-magnifying-glass pt-1 pr-2 md:pr-3"></i>
+            <input type="text" name="search" class="w-full outline-none md:w-[520px]" placeholder="Search any market topic...">
+        </div>
+    
+        <p class="text-gray-100 pt-2 md:pt-4 font-medium">There are 6 articles available for your preferences</p>
+    </section>
+
+    <!------------- Hero section -------------->
+    <section class="container grid grid-cols-12 mx-auto mb-8 gap-8 md:px-0 px-4 pt-10 dark:text-white">
+        <!-- news section-->
+        <section class="md:col-span-9 w-full col-span-12 md:ml-1 dark:text-white">
+            <div class="flex justify-between md:pb-3 border-black dark:border-gray-400 border-b-[3px] md:border-b-[4px]">
+                <h3 class="md:text-2xl text-xl font-semibold text-gray-800 dark:text-white">All News</h3>
+                <div class="flex items-center gap-2">
+                    <p>Filter by.</p>
+                    <h4 class="font-bold">Stocks</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+            <h2 class="md:text-2xl text-xl md:pt-8 pt-4 pb-4 font-semibold">Individual Stocks</h2>
+
+            <!-- Card 1  -->
+            <div class="md:flex border p-4 mb-4 shadow-md hover:scale-105 transition duration-300 cursor-pointer">
+                    <img src="images/blue phone.png" class="object-cover w-full h-36 mb-2 md:mb-0 md:w-fit" alt="">
+                <div class="ml-2 md:ml-4">
+                    <div class="flex gap-1 md:gap-1.5">
+                        <h4 class="bg-black text-white  font-semibold px-2 text-[10px] md:text-[12px]
+                        rounded-sm">DOW JONES</h4>
+                        <h4  class="bg-black text-white  font-semibold w-fit px-2 text-[10px] md:text-[12px] rounded-sm">NASDAQ</h4>
+                        <h4 class="bg-black text-white  font-semibold w-fit px-2 text-[10px] md:text-[12px] rounded-sm">S & P 500</h4>
+                    </div>
+
+                    <div class="md:mt-4">
+                        <h2 class="dark:text-white font-semibold text-gray-700">Nzd/usd forex technical analysis - traders will be monitoring fed for future rate hike clues</h2>
+                        <p class="dark:text-white text-sm md:text-[15px] mt-1 text-gray-500 md:mt-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+                    </div>
+
+                    <div class="flex gap-4 md:gap-6 mt-2 md:mt-[19px]">
+                        <p >06 September 2022  </p>
+                        <p class="font-semibold">By <span class="text-gray-400">Shouvik Nath</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2  -->
+            <div class="md:flex border p-4 mb-4 shadow-md hover:scale-105 transition duration-300 cursor-pointer">
+                    <img src="images/computer guy.png" class="object-cover w-full h-36 mb-2 md:mb-0 md:w-fit" alt="">
+                <div class="ml-2 md:ml-4">
+                    <div class="flex gap-1 md:gap-1.5">
+                        <h4 class="bg-black text-white  font-semibold px-2 text-[10px] md:text-[12px]
+                        rounded-sm">DOW JONES</h4>
+                        <h4  class="bg-black text-white  font-semibold w-fit px-2 text-[10px] md:text-[12px] rounded-sm">NASDAQ</h4>
+                        <h4 class="bg-black text-white  font-semibold w-fit px-2 text-[10px] md:text-[12px] rounded-sm">S & P 500</h4>
+                    </div>
+
+                    <div class="md:mt-4">
+                        <h2 class="font-semibold text-gray-700 dark:text-white">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h2>
+                        <p class="text-sm md:text-[15px] mt-1 text-gray-500 dark:text-white md:mt-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+                    </div>
+
+                    <div class="flex gap-4 md:gap-6 mt-2 md:mt-[19px]">
+                        <p >06 September 2022  </p>
+                        <p class="font-semibold">By <span class="text-gray-400">Sakib</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3  -->
+            <div class="md:flex border p-4 mb-4 shadow-md hover:scale-105 transition duration-300 cursor-pointer">
+                    <img src="images/computer graph.png" class="object-cover w-full h-36 mb-2 md:mb-0 md:w-fit" alt="">
+                <div class="ml-2 md:ml-4">
+                    <div class="flex gap-1 md:gap-1.5">
+                        <h4 class="bg-black text-white  font-semibold px-2 text-[10px] md:text-[12px]
+                        rounded-sm">wall street</h4>
+                        <h4  class="bg-black text-white  font-semibold w-fit px-2 md:px-3 text-[10px] md:text-[12px] rounded-sm">Analyst coverage</h4>
+                    </div>
+
+                    <div class="md:mt-4">
+                        <h2 class="font-semibold text-gray-700 dark:text-white">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h2>
+                        <p class="text-sm md:text-[15px] mt-1 text-gray-500 dark:text-white md:mt-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+                    </div>
+
+                    <div class="flex gap-4 md:gap-6 mt-2 md:mt-[19px]">
+                        <p >06 September 2022  </p>
+                        <p class="font-semibold">By <span class="text-gray-400">Amado</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- stock sector -->
+            <h2 class="md:text-2xl text-xl md:pt-8 pt-4 pb-4 font-semibold">Stock Sectors</h2>
+
+            <!-- card 4 -->
+            <div class="md:flex border p-4 mb-4 shadow-md hover:scale-105 transition duration-300 cursor-pointer">
+                <img src="images/paper.png" class="object-cover w-full h-36 mb-2 md:mb-0 md:w-fit" alt="">
+            <div class="ml-2 md:ml-4">
+                <div class="flex gap-1 md:gap-1.5">
+                    <h4 class="bg-black text-white  font-semibold px-2 text-[10px] md:text-[12px]
+                    rounded-sm">wall street</h4>
+                    <h4  class="bg-black text-white  font-semibold w-fit px-2 md:px-3 text-[10px] md:text-[12px] rounded-sm">Analyst coverage</h4>
+                </div>
+
+                <div class="md:mt-4">
+                    <h2 class="font-semibold text-gray-700 dark:text-white">Nzd/usd forex technical analysis - traders will be monitoring fed for future rate hike clues</h2>
+                    <p class="text-sm md:text-[15px] mt-1 text-gray-500 dark:text-white md:mt-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+                </div>
+
+                 <div class="flex gap-4 md:gap-6 mt-2 md:mt-[19px]">
+                    <p >06 September 2022  </p>
+                    <p class="font-semibold">By <span class="text-gray-400">Rafi</span></p>
+                 </div>
+                </div>
+            </div>
+
+            <!-- card 5 -->
+            <div class="md:flex border p-4 mb-4 shadow-md hover:scale-105 transition duration-300 cursor-pointer">
+                <img src="images/yellow phone.png" class="object-cover w-full h-36 mb-2 md:mb-0 md:w-fit" alt="">
+                    <div class="ml-2 md:ml-4">
+                        <div class="flex gap-1 md:gap-1.5">
+                            <h4 class="bg-black text-white  font-semibold px-2 text-[10px] md:text-[12px]
+                            rounded-sm">wall street</h4>
+                            <h4  class="bg-black text-white  font-semibold w-fit px-2 md:px-3 text-[10px] md:text-[12px] rounded-sm">Analyst coverage</h4>
+                        </div>
+
+                        <div class="md:mt-4">
+                        <h2 class="font-semibold text-gray-700 dark:text-white">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h2>
+                        <p class="text-sm md:text-[15px] mt-1 text-gray-500 dark:text-white md:mt-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+                    </div>
+
+                    <div class="flex gap-4 md:gap-6 mt-2 md:mt-[19px]">
+                        <p >06 September 2022  </p>
+                        <p class="font-semibold">By <span class="text-gray-400">Ridoy</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- stock market topic -->
+            <div class="md:pt-6">
+                <h2 class="md:text-2xl text-xl pb-4 font-semibold">Stock Market Topics</h2>
+                <!-- card 6 -->
+                <div class="md:flex border p-4 mb-4 shadow-md hover:scale-105 transition duration-300 cursor-pointer ">
+                    <img src="images/paisa.png" class="object-cover w-full h-36 mb-2 md:mb-0 md:w-fit" alt="">
+                        <div class="ml-2 md:ml-4">
+                            <div class="flex gap-1 md:gap-1.5">
+                                <h4 class="bg-black text-white  font-semibold px-2 text-[10px] md:text-[12px]
+                                rounded-sm">wall street</h4>
+                                <h4  class="bg-black text-white  font-semibold w-fit px-2 md:px-3 text-[10px] md:text-[12px] rounded-sm">Analyst coverage</h4>
+                            </div>
+
+                            <div class="md:mt-4">
+                            <h2 class="font-semibold text-gray-700 dark:text-white">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</h2>
+                            <p class="text-sm md:text-[15px] mt-1 text-gray-500 dark:text-white md:mt-2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+                        </div>
+
+                        <div class="flex gap-4 md:gap-6 mt-2 md:mt-[19px]">
+                            <p >06 September 2022  </p>
+                            <p class="font-semibold">By <span class="text-gray-400">Shakil</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        
+
+        <!-- feature -->
+        <section class="md:col-span-3 w-full col-span-12 md:mr-2">
+
+            <div class="flex justify-between md:pb-3 dark:border-gray-400 border-black border-b-[3px] md:border-b-[4px] ">
+                <h3 class="md:text-2xl text-xl font-semibold dark:text-white">Featured</h3>
+            </div>
+
+            <h2 class="md:text-2xl text-xl md:pt-8 pt-4 pb-4 font-semibold">Daily Rundowns</h2>
+            <!-- tag  -->
+            <div class="border p-2 md:p-3 m shadow-md"> 
+                <h3 class="font-medium pb-2">Earnings:</h3>
+                <div class="space-x-1 ">
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">CSAN</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">ALIYA</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">GETO</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">CSS</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">VZLA</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">MFH</span>
+                </div>
+                <h3 class="font-medium pb-2">Movers:</h3>
+                <div class="space-x-1">
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">REVT</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">ALIYA</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">SPA</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">CSS</span> 
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">VZLA</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">MFH</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">SYM</span>
+                </div>
+                <h3 class="font-medium pb-2">Technicals:</h3>
+                <div class="space-x-1">
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">CSAN</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">ALIYA</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">GETO</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">CSS</span> 
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">VZLA</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">MFH</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">MFH</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">MFH</span>
+                    <span class="bg-slate-400 font-medium p-0.5 text-xs md:text-sm rounded-sm hover:bg-black hover:text-white transition-all">MFH</span>
+                </div>
+            </div>
+            <!-- image details -->
+             <div class="mt-4">
+                <div class="text-center">
+                    <img src="images/double coin.png" class="md:w-full w-full">
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                </div>
+                <div class="text-center mt-4">
+                    <img src="images/pink coin.png" class="md:w-full w-full">
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                </div>
+                <div class="text-center mt-4">
+                    <img src="images/Guy.png" class="md:w-full w-full">
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                </div>
+             </div>
+        </section>
+    </section>
+
+    <!-------- footer --------->
+    <footer class="text-gray-800 w-full text-center font-medium my-4 dark:text-white">
+        All right reserved to TickerAI - @2024
+    </footer>
+
+    <script>
+        const htmltag = document.getElementById("htmltag")
+        document.getElementById("switch").addEventListener("click", function () {
+            htmltag.classList.toggle("dark")
+        })
+    </script>
+</body>
+</html>

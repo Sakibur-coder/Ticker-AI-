@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.select-market{
+    @apply bg-blue-100 text-center font-medium hover:bg-blue-300 transition-all duration-200 md:py-4 py-2 hover:text-white hover:scale-105 cursor-pointer rounded-full
+    text-[14px]
+}

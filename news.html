@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmltag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Ticker AI</title>
+    <link rel="stylesheet" href="output css/style.css">
+
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100">
+    <!-------------- nav section -------------->
+    <header class="md:py-4 md:mx-3 my-2 bg-white dark:bg-slate-800">
+        <nav class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-1 md:gap-3">
+                <a href="index.html">
+                    <img class="w-16 md:w-[80px]" src="images/tai-logo.png" 
+                    alt="">
+                </a>
+                <p class="text-[10px] md:text-[13px] dark:text-white">
+                    A Mark Cuban Company <br>
+                    AI-based Financial Market News Aggregator
+                </p>
+            </div>
+
+            <div class="flex items-center gap-2 md:gap-6">
+                <a href="index.html">
+                    <button class="bg-blue-400 px-2 py-1 text-[10px] md:px-6 md:py2 font-semibold border-2 border-blue-400 transition md:text-[12px] text-white rounded-[2px] hover:border-2 hover:border-blue-400 hover:bg-transparent hover:text-black hover:font-semibold hover:scale-105 hover:translate-y-0.5 dark:hover:text-white">
+                        Personalize News
+                    </button>
+                </a>
+
+                <div class="bg-gray-200 w-5 text-md text-center rounded-full text-blue-400 font-semibold md:w-8 md:text-2xl">IK</div>
+                <button class="mt-1 md:mt-0 text-center ml-2" id="switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" class=" dark:stroke-white"/>
+                      </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="mt-6">
+        <section class="container mx-auto">
+            <div class="flex justify-between md:pb-3 border-black border-b-[3px] md:border-b-[4px] md:mx-8">
+                <h3 class="md:text-2xl text-xl font-semibold text-gray-800 uppercase">Personolize your news</h3>
+            </div>
+
+            <div class="space-y-4 flex flex-col justify-center max-w-lg mx-auto md:mt-10 mt-6 p-8 bg-white shadow-md rounded-md">
+                <h3 class="font-semibold md:text-2xl text-lg text-gray-800 text-center rounded-md">Select your Markets</h3>
+
+                <div  class="space-y-4">
+                    <p class="select-market">Stocks</p>
+                    <p class="select-market">Crypto</p>
+                    <p class="select-market">Economy & Business</p>
+                    <p class="select-market">Commodities | Forex</p>
+                    <p class="select-market">Fixed Income</p>
+                </div>
+                <button class="bg-blue-900 space-y-4 w-full text-center text-white font-medium py-2 md:py-4 rounded-full md:text-lg hover:bg-blue-950 transition-all duration-200 hover:scale-105 hover:cursor-pointer text-[14px]">Continue</button>
+            </div>
+        </section>
+    </section>
+
+    <!-------- footer --------->
+    <footer class="text-white w-full bg-slate-500 text-center font-medium my-4 mt-10 py-2 md:py-4">
+        All right reserved to TickerAI - @2024
+    </footer>
+
+    <script>
+        const htmltag = document.getElementById("htmltag")
+        document.getElementById("switch").addEventListener("click", function() {
+            htmltag.classList.toggle("dark")
+        })
+    </script>
+</body>
+</html>
