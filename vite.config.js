@@ -1,14 +1,13 @@
 import { resolve } from "path";
-import { Input } from "postcss";
-import { build, defineConfig, rollupVersion } from "vite";
+import { defineConfig } from "vite";
 
-export default defineConfig ({
-    build: {
-        rollupoption: {
-            Input: {
-                main: resolve(__dirname, "index.html"),
-                main: resolve(__dirname, "news.html"),
-            }
-        }
-    }
-})
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        news: resolve(__dirname, "news.html"),
+      },
+    },
+  },
+});
